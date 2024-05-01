@@ -1,0 +1,75 @@
+.forms {
+	background: #fff;
+	margin: 30px auto;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+}
+.forms p{
+	margin: 10px 0 0 0 ;
+}
+.forms form { padding: 30px 0; }
+#signup { display: none; }
+.forms .tab-group {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.forms .tab-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.forms .tab-group li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background: #e5e6e7;
+	color: #888;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	border-top: 3px solid transparent;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.forms .tab-group li a:hover {
+	background: #dedfdf;
+	color: #666;
+}
+.forms .tab-group .active a {
+	background: #fff;
+	color: #444;
+	border-top: 3px solid #73cf41;
+}
+
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 14px;
+    color: white;
+    background-color: rgb(123, 213, 255);
+	display: inline-block;
+	padding: 10px 12px ;
+	transition-duration: 0.4s;
+	border-radius: 4px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: rgb(33, 114, 168);
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
